@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		E93C43D2260001EC00EDD94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C43D1260001EC00EDD94C /* AppDelegate.swift */; };
 		E93C43D4260001EC00EDD94C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C43D3260001EC00EDD94C /* SceneDelegate.swift */; };
-		E93C43D6260001EC00EDD94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C43D5260001EC00EDD94C /* ViewController.swift */; };
 		E93C43D9260001EC00EDD94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93C43D7260001EC00EDD94C /* Main.storyboard */; };
 		E93C43DB260001EE00EDD94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93C43DA260001EE00EDD94C /* Assets.xcassets */; };
 		E93C43DE260001EE00EDD94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93C43DC260001EE00EDD94C /* LaunchScreen.storyboard */; };
+		E9410F97261A3ED2008CC3D7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410F96261A3ED2008CC3D7 /* TableViewController.swift */; };
+		E9410F9C261A4C15008CC3D7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410F9B261A4C15008CC3D7 /* CoreDataStack.swift */; };
+		E9410FA0261A4F43008CC3D7 /* Time.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9410F9E261A4F43008CC3D7 /* Time.xcdatamodeld */; };
+		E9410FBB261A5912008CC3D7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410FB7261A5912008CC3D7 /* User+CoreDataClass.swift */; };
+		E9410FBC261A5912008CC3D7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410FB8261A5912008CC3D7 /* User+CoreDataProperties.swift */; };
+		E9410FBD261A5912008CC3D7 /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410FB9261A5912008CC3D7 /* Meal+CoreDataClass.swift */; };
+		E9410FBE261A5912008CC3D7 /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9410FBA261A5912008CC3D7 /* Meal+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E93C43CE260001EC00EDD94C /* MealTimeCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealTimeCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93C43D1260001EC00EDD94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E93C43D3260001EC00EDD94C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E93C43D5260001EC00EDD94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E93C43D8260001EC00EDD94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E93C43DA260001EE00EDD94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E93C43DD260001EE00EDD94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E93C43DF260001EE00EDD94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9410F96261A3ED2008CC3D7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E9410F9B261A4C15008CC3D7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E9410F9F261A4F43008CC3D7 /* Time.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Time.xcdatamodel; sourceTree = "<group>"; };
+		E9410FB7261A5912008CC3D7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E9410FB8261A5912008CC3D7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E9410FB9261A5912008CC3D7 /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E9410FBA261A5912008CC3D7 /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		E93C43C5260001EC00EDD94C = {
 			isa = PBXGroup;
 			children = (
+				E9410FAC261A5452008CC3D7 /* CoreData Entities */,
 				E93C43D0260001EC00EDD94C /* MealTimeCoreData */,
 				E93C43CF260001EC00EDD94C /* Products */,
 			);
@@ -58,13 +71,26 @@
 			children = (
 				E93C43D1260001EC00EDD94C /* AppDelegate.swift */,
 				E93C43D3260001EC00EDD94C /* SceneDelegate.swift */,
-				E93C43D5260001EC00EDD94C /* ViewController.swift */,
+				E9410F9B261A4C15008CC3D7 /* CoreDataStack.swift */,
+				E9410F96261A3ED2008CC3D7 /* TableViewController.swift */,
 				E93C43D7260001EC00EDD94C /* Main.storyboard */,
 				E93C43DA260001EE00EDD94C /* Assets.xcassets */,
 				E93C43DC260001EE00EDD94C /* LaunchScreen.storyboard */,
+				E9410F9E261A4F43008CC3D7 /* Time.xcdatamodeld */,
 				E93C43DF260001EE00EDD94C /* Info.plist */,
 			);
 			path = MealTimeCoreData;
+			sourceTree = "<group>";
+		};
+		E9410FAC261A5452008CC3D7 /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E9410FB7261A5912008CC3D7 /* User+CoreDataClass.swift */,
+				E9410FB8261A5912008CC3D7 /* User+CoreDataProperties.swift */,
+				E9410FB9261A5912008CC3D7 /* Meal+CoreDataClass.swift */,
+				E9410FBA261A5912008CC3D7 /* Meal+CoreDataProperties.swift */,
+			);
+			path = "CoreData Entities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E93C43D6260001EC00EDD94C /* ViewController.swift in Sources */,
+				E9410FA0261A4F43008CC3D7 /* Time.xcdatamodeld in Sources */,
 				E93C43D2260001EC00EDD94C /* AppDelegate.swift in Sources */,
+				E9410FBB261A5912008CC3D7 /* User+CoreDataClass.swift in Sources */,
+				E9410FBC261A5912008CC3D7 /* User+CoreDataProperties.swift in Sources */,
 				E93C43D4260001EC00EDD94C /* SceneDelegate.swift in Sources */,
+				E9410FBE261A5912008CC3D7 /* Meal+CoreDataProperties.swift in Sources */,
+				E9410F97261A3ED2008CC3D7 /* TableViewController.swift in Sources */,
+				E9410FBD261A5912008CC3D7 /* Meal+CoreDataClass.swift in Sources */,
+				E9410F9C261A4C15008CC3D7 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +373,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9410F9E261A4F43008CC3D7 /* Time.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9410F9F261A4F43008CC3D7 /* Time.xcdatamodel */,
+			);
+			currentVersion = E9410F9F261A4F43008CC3D7 /* Time.xcdatamodel */;
+			path = Time.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E93C43C6260001EC00EDD94C /* Project object */;
 }
