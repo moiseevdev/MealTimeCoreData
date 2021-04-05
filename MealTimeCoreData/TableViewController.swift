@@ -15,8 +15,8 @@ class TableViewController: UITableViewController {
     
     lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
         return formatter
     }()
     
@@ -85,5 +85,18 @@ class TableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard let meal = user.meals?[indexPath.row] as? Meal, editingStyle == .delete else { return }
+        
+        context.delete(meal)
+        
+        do {
+            try context.save()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+    }
 
 }
